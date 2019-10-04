@@ -49,6 +49,7 @@
     -o-transition: .3s;
 }
 
+
 #mobile-nav-content {
     text-align: center;
     width: 100px;
@@ -187,6 +188,7 @@
         -ms-transition: border-color 300ms linear;
         -o-transition: border-color 300ms linear;
     }
+    //
 
     /* Pricing */  
     .pricing-table .price h2 {

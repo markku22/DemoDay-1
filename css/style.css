@@ -175,6 +175,26 @@ section {
     border: 1px solid #212226;
 }
 
+.btn-white {
+    color: #212226;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    color: #fff;
+    background-color: #212226;
+    border: 1px solid #212226;
+}
+
+
+
+
+
+
+
+
 .btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -345,6 +365,8 @@ arrow-down:focus {
     -ms-transition: all 400ms ease-in-out;
     -o-transition: all 400ms ease-in-out;
 }
+
+
 
 
 
@@ -646,6 +668,359 @@ ul.social-list li:nth-child(3) a:hover {
     padding: 0;
 }
 
+.portfolio-item {
+    overflow: hidden;
+    position: relative;
+}
+
+/* Filter CSS */
+#isotope-filters {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0;
+}
+#isotope-filters button {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    padding-right: 35px;
+    outline: 0;
+}
+#isotope-filters button span {
+    display: block;
+    padding-bottom: 5px;
+    transition: border-color .4s ease-in-out;
+    -webkit-transition: border-color .4s ease-in-out;
+    -moz-transition: border-color .4s ease-in-out;
+    -ms-transition: border-color .4s ease-in-out;
+    -o-transition: border-color .4s ease-in-out;
+}
+#isotope-filters button.active span {
+    color: #F5CB08;
+    border-bottom: 3px solid #F5CB08;
+
+}
+
+
+/* Zoom Effect */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+} 
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+/* #################################################### */
+/* Overlay Effect 2.10 harmaa ei vie näy */
+/* #################################################t */
+/* Overlay Effect */
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, 0.9);
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+    opacity: .9;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;*/
+}
+/* Item Details Effect */
+.portfolio-item-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.portfolio-item-details h3 {
+    color: #F5CB08;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    height: 6px;
+    width: 30px;
+    margin: 11px auto 5px auto;
+}
+.portfolio-item-details p {
+    font-size: 17px;
+    color: #FFF;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    -moz-transform: translateY(20%);
+    -ms-transform: translateY(20%);
+    -o-transform: translateY(20%);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+/* Show Overlay on mouse over */
+.portfolio-item:hover .portfolio-item-details h3 {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.portfolio-item:hover .portfolio-item-details p {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+}
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
+}
+
+
+/* =========================================
+            Pricing
+========================================== */
+
+.pricing-table {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    padding: 32px 21px;
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+.pricing-table:hover {
+    background: #F5CB08;
+}
+.pricing-table .type h4 {
+    color: #F5CB08;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.pricing-table .price {
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 24px 0;
+}
+.pricing-table .price h2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    margin: 0 0 0 24px;
+    position: relative;
+}
+.pricing-table .price h2 span {
+    font-family: "Raleway", sans-serif;
+}
+.pricing-table .price h2 span.dollar {
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+.pricing-table .price h2 span.month {
+    font-size: 11px;
+    font-weight: 400;
+    position: absolute;
+    left: 5px;
+    top: -12px;
+}
+.pricing-table .price p {
+    line-height: normal;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table ul.package {
+    list-style: none;
+    padding: 20px 0;
+}
+
+.pricing-table ul.package li {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.pricing-table ul.package li i {
+    width: 24px;
+}
+
+.pricing-table .btn-yellow,
+.pricing-table.black .btn-white {
+    width: 96%;
+}
+
+.pricing-table:hover h4,
+.pricing-table:hover h2,
+.pricing-table:hover p,
+.pricing-table:hover ul.package
+{
+    color: #fff;
+}
+
+.pricing-table:hover .btn-yellow {
+    background: #fff;
+    color: #212226;
+    border: 1px solid #fff;
+}
+
+.pricing-table .btn-yellow:hover,
+.pricing-table .btn-yellow:focus {
+    background: #212226;
+    color: #fff;
+    border: 1px solid #212226;
+}
+/* Black Pricing Table */
+.pricing-table.black {
+    background: #212226;
+    color: #fff;
+}
+
+.pricing-table.black .type h4 {
+    color: #fff;
+}
+
+.pricing-table.black:hover {
+    background: #F5CB08;
+}
+
+/* =========================================
+            Stats
+========================================== */
+
+#stats {
+    background: url("../img/stats/stats-bg-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* Ylläolevan asettely tiivistetympi Udemyssa */
+
+#stats .content-box-md {
+    background: rgba(0, 0, 0, 0.8);
+}
+#stats .vertical-heading {
+    margin-bottom: 50px;
+}
+#stats .vertical-heading h2 {
+    color: #FFF;
+}
+
+.stats-item {
+    background: rgba(61, 68, 68, 0.6);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    min-height: 179px;
+    padding: 25px 50px;
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+
+.stats-item i {
+    font-size: 42px;
+    color: #F5CB08;
+    margin: 0 0 6px 0;
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+
+.stats-item h3 {
+    font-size: 32px;
+    color: #fff;
+    margin: 5px 0 5px 0;
+}
+.stats-item p {
+    color: #FFF;
+    margin: 0;
+}
+
+.stats-item:hover {
+    background: #F5CB08;
+}
+
+.stats-item:hover i {
+    color: #212226;
+    transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -654,17 +1029,72 @@ ul.social-list li:nth-child(3) a:hover {
             Blog
 ========================================== */
 
-.blog-post {
-    background: #fff;
-    padding: 20px;
-    -weckit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px 0rgba(0,0,0,0.1);
-    border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+#blog {
+    background: #f4f4f4;
 }
+#blog-left p {
+    margin: 25px 0;
+}
+#blog-btn a {
+    margin: 0;
+}
+.blog-post {
+/*-webkit-transform: scale(1.1);
+-moz-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);*/
+background: #fff;
+padding: 20px;
+-weckit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+box-shadow: 0 0 10px 0rgba(0,0,0,0.1);
+border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+-ms-border-radius: 6px;
+-o-border-radius: 6px;
+}
+
+.blog-post h4 {
+    line-height: 40px;
+    margin: 0;
+}
+.blog-post > p {
+    line-height: 24px;
+    margin: 0;
+    font-weight: 300;
+}
+.blog-post a {
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: "Raleway", sans-serif;
+    color: #F5CB08;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 400ms linear;
+    -webkit-transition: all 400ms linear;
+    -moz-transition: all 400ms linear;
+    -ms-transition: all 400ms linear;
+    -o-transition: all 400ms linear;
+}
+.blog-post-a:hover {
+    color: #212226;
+}
+
+.blog-post .post-meta {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+.blog-post .post-meta p {
+    font-size: 11px;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+
 
 /* =========================================
             Contact
@@ -813,3 +1243,34 @@ ul.navbar-nav>li>a:focus {
     font-weight: 500;
 }
 
+/* =========================================
+            Animation
+========================================== */
+/*-webkit- näille */
+
+#home-heading-1,
+#home-heading-2,
+#home-text,
+#home-btn,
+#arrow-down i {
+    animation-duration: 1,5s;
+}
+
+
+
+#home-heading-1 {
+    animation-delay: 1s;
+}
+
+#home-heading-2 {
+    animation-delay: 1.5s;
+}
+#home-text {
+    animation-delay: 2s;
+}
+#home-btn {
+    animation-delay: 2.5s;
+}
+#arrow-down i {
+    animation-delay: 3s;
+}

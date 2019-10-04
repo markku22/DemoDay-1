@@ -33,8 +33,6 @@ $(function () {
     });
 });
 
-
-
 /* =========================================
             Progress Bars
 ========================================== */
@@ -70,13 +68,95 @@ $(function () {
 
 });
 
+/* =========================================
+            Portfolio
+========================================== */
 
+$(window).on('load', function () {
+
+    // Initielize Isotope
+    $("#isotope-container").isotope({
+    });
+
+    // Filter items on button click
+    $("#isotope-filters").on('click', 'button', function () {
+
+        // get filter value
+        var filterValue = $(this).attr('data-filter');
+
+        // filter portfolio
+        $("#isotope-container").isotope({
+            filter: filterValue
+        });
+
+        // active button
+        $("#isotope-filters").find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+});
+
+/* =========================================
+            Magnifier
+========================================== */
+$(function () {
+
+    $("portfolio-wrapper").magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});
+
+/* =========================================
+            Stats
+========================================== */
+$(function ($) {
+    $('.counter').counterUp({
+        delay: 10,
+        time: 2000
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+            Clients
+========================================== */
+/*$(function () {
+
+    $("#portfolio-wrapper").magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});
+*/
 /* =========================================
             Clients
 ========================================== */
 
 /* tähän clients-osio */
-$(function () {
+/*$(function () {
     $("#clients-list").owlCarousel({
         items: 6,
         autoplay: false,
@@ -102,7 +182,7 @@ $(function () {
         }
     });
 });
-
+*/
 
 /* =========================================
             Google Map
@@ -174,13 +254,32 @@ $(function () {
 $(function () {
 
     // Show mobile nav
-    $("#mobile-nav-opn-btn").click(function() {
+    $("#mobile-nav-open-btn").click(function () {
         $("#mobile-nav").css("height", "100%");
     });
 
     // Hide mobile nav
-    $("#mobile-nav-close-btn, #mobile-nav a").click(function() {
+    $("#mobile-nav-close-btn, #mobile-nav a").click(function () {
         $("#mobile-nav").css("height", "0%");
     });
-    
+
 });
+
+/* =========================================
+            Animation
+========================================== */
+// animate on scroll
+$(function () {
+    new WOW().init();
+});
+
+// home animation on page load
+$(window).on('load', function () {
+
+    $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-heading-2").addClass("animated fadeInLeft");
+    $("#home-text").addClass("animated zoomIn");
+    $("#home-btn").addClass("animated zoomIn");
+    $("#arrow-down i").addClass("animated fadeInDown infinite");
+    
+    });
